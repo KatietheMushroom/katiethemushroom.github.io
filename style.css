@@ -54,8 +54,8 @@ body {
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .02em; /* Adjust as needed */
     animation: 
-        typing 4s steps(15, end),
-        blink-caret 1s step-end infinite;
+        typing 2s steps(15, end),
+        blink-caret 1s 2s step-end infinite;
 }
 
 /* The typing effect */
@@ -68,10 +68,6 @@ body {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #3c3131; }
-}
-
-.typing-cursor {
-    
 }
 
 .button-shelf {
@@ -98,6 +94,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .button:hover {
@@ -109,5 +106,38 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 770px;
+    margin: 10px;
+    padding-left: 30px;
+    line-height: 170%;
+    font-size: 18px;
+}
 
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: #3c3131;
+    background-color: #f1bbc5;
+    padding: 10px 15px;
+    border: 2px solid #3c3131;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.back-button:hover {
+    transition-duration: 0.2s;
+    color: #f8f8f8;
+    background-color: #3c3131;
+}
+
+a {
+    text-decoration: none;
 }
