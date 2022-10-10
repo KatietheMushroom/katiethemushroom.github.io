@@ -117,6 +117,19 @@ body {
     font-size: 18px;
 }
 
+.text {
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.text a {
+    color: #f1bbc5;
+} 
+
+.text a:hover {
+    text-decoration: line-through;
+} 
+
 .back-button {
     position: fixed;
     bottom: 20px;
