@@ -28,6 +28,13 @@ body {
     margin-bottom: 3rem;
 }
 
+.card.stretch {
+    height: auto;
+    position: absolute;
+    top: 10vh;
+    padding-bottom: 5rem;
+}
+
 .screen {
     font-family: 'Anonymous Pro', monospace;
     font-weight: bold;
@@ -130,19 +137,10 @@ body {
     text-decoration: line-through;
 } 
 
-.back-button {
+.button.back-button {
     position: fixed;
-    bottom: 20px;
-    right: 30px;
-    color: #3c3131;
-    background-color: #f1bbc5;
-    padding: 10px 15px;
-    border: 2px solid #3c3131;
-    border-radius: 5px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    transition-duration: 0.2s;
+    bottom: 2vh;
+    right: 2vw;
 }
 
 .back-button:hover {
@@ -153,4 +151,54 @@ body {
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.h2sub {
+    color: #696969;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 2rem;
+    color: #f1bbc5;
+}
+
+.jump-menu a {
+    color: #3c3131;
+}
+
+.blog-nav {
+    position: fixed;
+    left: 2vw;
+    bottom: 1vh;
+}
+
+.button.blog-button  {
+    margin-bottom: 2vh;
+    width: 200px;
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid #3c3131;
+    border-radius: 7px;
+    box-shadow: 10px 10px #f1bbc5;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-style: italic;
 }
